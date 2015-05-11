@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "YTKKeyValueStore/encrypt"
-  s.version      = "0.1.3"
+  s.version      = "0.1.4"
   s.summary      = "A simple Key-Value storage tool, using Sqlite as backend."
   s.homepage     = "https://github.com/yuantiku/YTKKeyValueStore"
   s.license      = "MIT"
