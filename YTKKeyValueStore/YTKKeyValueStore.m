@@ -338,13 +338,13 @@ static NSString *const DELETE_ITEMS_WITH_PREFIX_SQL = @"DELETE from %@ where id 
     }
 }
 
-- (NSUInteger)getCountFromTable:(NSString *)tableName
+- (unsigned long long int)getCountFromTable:(NSString *)tableName
 {
     if ([YTKKeyValueStore checkTableName:tableName] == NO) {
         return 0;
     }
     NSString * sql = [NSString stringWithFormat:COUNT_ALL_SQL, tableName];
-    __block NSUInteger num = 0;
+    __block unsigned long long int num = 0;
     [_dbQueue inDatabase:^(FMDatabase *db) {
         if (_encryptKey) {
             [db setKey:_encryptKey];

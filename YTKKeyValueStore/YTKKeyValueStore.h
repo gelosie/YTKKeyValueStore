@@ -53,7 +53,7 @@
 
 - (NSArray *)getAllItemsFromTable:(NSString *)tableName;
 
-- (NSUInteger)getCountFromTable:(NSString *)tableName;
+- (unsigned long long int)getCountFromTable:(NSString *)tableName;
 
 - (void)deleteObjectById:(NSString *)objectId fromTable:(NSString *)tableName;
 
